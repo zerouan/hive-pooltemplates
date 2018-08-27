@@ -1,0 +1,25 @@
+[
+	{
+		"coin": "TRTL",
+		"servers": [
+			{
+				"geo": "cryptonote.social", // only one port
+				"urls": [
+					"cryptonote.social:4444"
+				]
+			}		
+		],
+		"miners": {
+			"xmrig": {
+				"url": "%URL%",
+				"pass": "difficulty", // set starting diff here
+				"template": "%WAL%"."put-any-name-here", // one name each wallet only, no same wallet with different names
+				"user_config": "\"algo\": \"cryptonight-lite/1\""
+			},
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "difficulty", // set starting diff here
+				"template": "%WAL%"."put-any-name-here", // one name each wallet only, no same wallet with different names
+				"user_config": "\"currency\": \"cryptonight_lite_v7\""
+			}		
+		}	
